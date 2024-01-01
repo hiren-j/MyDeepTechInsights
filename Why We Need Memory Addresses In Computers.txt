@@ -1,0 +1,77 @@
+    In this post, I'll be teaching the concept of "memory addresses in computers" and the real cause of why the concept of "variables" is discovered!
+
+    Things I'll cover: 1. Why do we need memory locations/memory addresses?
+                       2. The origin point of variables.
+                       3. The real relation of variables with memory addresses.
+
+    Okay! Now let's understand it with a real-world example, suppose you have a friend and you want to meet him. 
+	Now, in order to meet him the required thing is his "physical location". So, you'll ask for his "home address" on a phone call with him. 
+	Now, after the phone call you've got the "physical location/home address" of your friend and you've happily remembered it and also noted it. 
+	Finally! you're ready to meet him.
+
+    Before moving to the below paragraph, let's recap the standard concept of "variables". 
+    No doubt! Every programmer is aware of this line, "a variable is nothing but a container which is used to store data" or "a variable is used to store data".
+    However, let me tell you that's not the primary reason for the discovery of "variables". So, what's the primary reason?
+
+    Okay! Now let's understand it with a computer-world example, see in computers whenever data is stored in the "main memory". 
+	The "memory part" where the data is stored is nothing but a "random memory location", which means everything in the memory is stored at a "random memory location". 
+	So, the "memory locations/memory addresses" are the one that stores the data in the "main memory/memory region" of the computer. 
+	"Why do we store data in the computers? So that we can access the data anytime and can play with them".
+
+    Read this analogy to understand in a better way:
+        -> We the humans are living on the earth on a different-different locations.
+        -> You can relate the "earth" as the "main memory", the "different-different locations in the earth" as the "random memory locations in the main memory" and the "humans" as the "data". 
+    You can understand it as:
+        -> The "humans" are living on the "earth" on a "different-different locations".
+        -> The "data" are stored on the "main memory" on a "different-different memory locations".
+
+    Now let's recap the key points from the real-world story:
+        1. You want to meet your friend.
+        2. You needed the "home address" so that you could meet him.
+        3. You've easily remembered the "home address" or let's say you've noted it.
+
+    Everyone! Now let's match up the points of the "real-world story" with the points of the "computer-world example":
+        1. You want to access the data. ("friend of the story" is represented as the "data we want to access/store")
+
+        2. To access the data the "memory address" of the data is required. ("home address of the friend" is represented as the "memory address of the data")
+
+        3. Everyone! we can't remember the "memory addresses" of the data or noting the "memory address" doesn't make sense because they are in a "hexa-decimal form" which is not possible for humans to remember.
+
+    Note: A "hexa-decimal-form" is a mixed-up collection of letters(A-F) and digits(0-9). Ex: 0x1A3B4E7C, 0xF48446531, etc.
+    See it's hard to remember. Now the question arises "How to store the data in the computers without messing with the memory address directly?" 
+	and "How to access the data without messing with the memory addresses directly?". Now here comes the concept of "variables".
+
+    Now, let's understand "variables" with a C++ example: Whenever we create a variable in our program,
+    [int var = 20;] - this line represents is we've created a variable named "var" which stores the value 20.
+
+    Let's take the visuals of the "data in the main memory" to understand in a better way: 
+    Note: Suppose the below box is a "memory block for the data somewhere in the main memory".
+    Note: Suppose the below figure is without including the concept of "variables".
+
+                                    ---------------
+                                    | 0xF45651358 | -> it is a random memory location.
+                                    ---------------
+                                    |      20     | -> it is an integer value stored at the memory location.
+                                    ---------------
+
+    Note: The data stored at the memory location can be of any primitive type.                          
+    Note: Now Suppose the below figure is with including the concept of "variables". 
+
+                                          var       -> The variable is actually representing the memory location.
+                                    ---------------
+                                    | 0xF45651358 | -> It is a random memory location.
+                                    ---------------
+                                    |      20     | -> It is an integer value stored at the memory location.
+                                    ---------------
+
+    It's obvious that a variable name is easy to remember which is created based on the "rules of the variables". 
+	So, the point here is the "variables" are origined so that they could be used to represent a "random memory location" where data of a primitive type is stored. 
+	This is the primary reason for the discovery of the variables and you've noticed that it's not directly storing the "data".
+	Eventually, it's just representing the "random memory location" where the data is stored. So, the real relation of variables with the memory locations is to act as a representer for them. 
+
+    So, if you want a correct definition for the "variables" then it should be: 
+    "The variables in computers are used to represent a random memory location where data of a primitive type is stored. They're often called a container which indirectly stores the data stored at the memory location. 
+	Variables are designed to be easy to remember for humans, making them a user-friendly way to access data without dealing with the memory locations directly."
+
+    Hope you've got it! Comments for any doubt.
+    Note: The above paragraphs and intuition inside it are created based on my personal knowledge and experiences. Feel free to comment if you've any kind of doubt!
