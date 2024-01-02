@@ -68,7 +68,8 @@ Eventually, it's just representing the "random memory location" where the data i
 to act as a representer for them. 
 
 So, if you want a correct definition for the "variables" then it should be: 
-    "The variables in computers are used to represent a random memory location where data of a primitive type is stored. They're often called a container which indirectly stores the data stored at the memory location. 
+    "The variables in computers are used to represent a random memory location where data of a primitive type is stored. 
+     They're often called a container which indirectly stores the data stored at the memory location. 
      Variables are designed to be easy to remember for humans, making them a user-friendly way to access data without dealing with the memory locations directly."
 
 Hope you've got it! Raise your hand for any doubt.
