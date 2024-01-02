@@ -19,7 +19,7 @@ which means everything in the memory is stored at a "random memory location". So
 
 Read this analogy to understand in a better way:
     -> We the humans are living on the earth on a different-different locations.
-    -> You can relate the "earth" as the "main memory", the "different-different locations in the earth" as the "random memory locations in the main memory" 	   and the "humans" as the "data". 
+    -> You can relate the "earth" as the "main memory", the "different-different locations in the earth" as the "random memory locations in the main memory" and the "humans" as the "data". 
 You can understand it as:
     -> The "humans" are living on the "earth" on a "different-different locations".
     -> The "data" are stored on the "main memory" on a "different-different memory locations".
@@ -32,7 +32,7 @@ Now let's recap the key points from the real-world story:
 Everyone! Now let's match up the points of the "real-world story" with the points of the "computer-world example":
     1. You want to access the data. ("friend of the story" is represented as the "data we want to access/store")
     2. To access the data the "memory address" of the data is required. ("home address of the friend" is represented as the "memory address of the data")
-    3. Everyone! we can't remember the "memory addresses" of the data or noting the "memory address" doesn't make sense because they are in a "hexa-decimal 	   form" which is not possible for humans to remember.
+    3. Everyone! we can't remember the "memory addresses" of the data or noting the "memory address" doesn't make sense because they are in a "hexa-decimal form" which is not possible for humans to remember.
 
 Note: A "hexa-decimal-form" is a mixed-up collection of letters(A-F) and digits(0-9). Ex: 0x1A3B4E7C, 0xF48446531, etc.
 See it's hard to remember. Now the question arises "How to store the data in the computers without messing with the memory address directly?" 
