@@ -57,11 +57,10 @@
 
     So if you want one line definition, then here you go :)
         Program: "The file which contains the machine code (binary form of a source code), is called as the compiled code. The compiled code is a file which is now ready to be executed by the machine hardware, which is called as the program".        
-
         Process: "The compiled code which is "actioned / opened" is gets loaded into the "main memory" for execution, and as its inside the "main memory" the machine hardware starts executing it, so this is called as the process."
         
     Note: In the real world the "source file is also referred as program", so don't worry about that, it's because the humans are made so such that they cant be perfect. Because sometimes the humans can't express the exact words in flow. 
-    Is you know then in "DBMS entity sets are also referred as entities". But eventually the listeners already know that what the particular guy is talking about. So it's just like that. As you have understood the real meaning of "program" and "process" so now you can relate them correctly.
+    If you know then in "DBMS entity sets are also referred as entities". But eventually the listener grasp that what the particular guy is talking about. So it's just like that. As you have understood the real meaning of "program" and "process" so now you can relate them correctly.
 
     So i hope you've understood the insightful difference between "program" and "process".
 
