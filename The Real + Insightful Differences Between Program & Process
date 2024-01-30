@@ -1,0 +1,73 @@
+/*
+    In this post, I'll teach you the actual meaning of "program" and "process", eventually the actual differences between them! 
+    I will provide the "Diagrammatic Explanation" for it, it will help you to imagine the deep-view (insights).
+  
+    Thing's I'll cover: 1. What is program? 
+                        2. What is process? 
+
+    1. The actual meaning of "Program": 
+        Let's understand it with an example, suppose you have a file containing "C++ Code" or let's call it the "C++ Source File / CPP Source File". 
+        Now whenever you compile the code, you can see that a new file gets generated in our system. In "Windows OS that file is known as (exe file) having extension (.exe)" and in "Linux OS we can say it as the executable file because linux executables don't necessarily have a specific file extension".
+        Example:
+                 . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+                 . test.cpp (C++ source file)                          .                             
+                 .        |                                            .
+                 .        | (compiling the code)                       .
+                 .        ↓                                            .
+                 . test.exe (exe file / executable file)               .
+                 . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+
+        In terms of C++ that "newly generated file is called as the compiled code". This compiled code is actually the machine code. Which means the compiled file contains the binary form of everything written in C++ source file. 
+        Shortly, it contains the binary form of C++ source file. Why it contains the binary form? Its because, we know that inorder to execute anything we have to instruct it to the machine into the language that the machine understands which is the binary language.
+        Now moving back to the point, so now "exe file or machine code" is generated. Now, its the "machine code" that means "this file is now ready to be executed by the machine hardware (CPU), so now this file is called as program".
+        So, "the file which contains the binary form of any source code, or the compiled code is called as the program. It's because the file is now ready to be executed by the machine hardware (CPU)."
+        Or you can also understand it in this way, "the file which is now ready to be executed by the machine hardware, is called as the program."
+    
+    2. The actual meaning of "Process":
+        Let's understand "Process" with the help of the above example. 
+        Now, we have generated the "exe file / program". So the moment when you double click the program (open the program), that program is now called as process. 
+        Because, "when you double click the program that means the program gets loaded into the main memory. As it's now loaded into the RAM, that means the machine hardware is executing it. So that's why it's called process." 
+        That means when the programs runs it becames process. We are calling it process its because the machine hardware (CPU) is now executing it. 
+
+        "So whenever the machine hardware starts executing any program that program is called as the process." 
+        If you want to verify then you can open the task manager and can see that particular program will be running in the process section. (again, program running means the CPU is currently executing it, that's why it's called the process) 
+        So, now you can understand the deep meaning of this commonly said line: "program under execution is called as process". 
+
+        Look at the diagram to have insights:- (You should read the diagram from the lefmost part)
+
+            . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+            .                                                  .                          / \                                         .
+            .                                                  .                         /   \ Getting loaded                         .
+            .                                                  .                        /     \                                       .
+            .                                                  .                       /       ↓                                      .
+            .                                                  .                      /    ___________               ___________      .
+            .   _______________  Code compilation              .                     /    |           |    ~~~~>    |           |     .
+            .  |               |       ↓         -------       .       -------  ____/     |           |    ~~~~>    |           |     .
+            .  |  Source code  |     ~~~~~>      | exe |       .       | exe |            |           |    ~~~~>    |  0xABC12  |     .
+            .  | (Source file) |                 -------       .       -------            |           |    ~~~~>    |  -------  |     .
+            .  |_______________|                    ↑          .          ↑               |           |    ~~~~>    |  | exe |  |     .
+            .                                 Compiled code    .     Double click         |           |    ~~~~>    |  -------  |     .
+            .                                                  .                          |___________|    ~~~~>    |___________|     .
+            .                                                  .                           Main Memory               Main Memory      .    
+            . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+                                   STAGE 1                                                    STAGE 2                                 
+
+        Note: So at last we can see that the "procees" is lying at a random memory location (0xABC12) in the "RAM / main memory", now the CPU will locate the "process" from the memory location and will start executing it.
+        Note: The memory location can be random (not just "0xABC12", it can be any random memory address).
+
+    So if you want one line definition, then here you go :)
+        Program: "The file which contains the machine code (binary form of a source code), is called as the compiled code. The compiled code is a file which is now ready to be executed by the machine hardware, which is called as the program".        
+
+        Process: "The compiled code which is "actioned / opened" is gets loaded into the "main memory" for execution, and as its inside the "main memory" the machine hardware starts executing it, so this is called as the process."
+        
+    Note: In the real world the "source file is also referred as program", so don't worry about that, it's because the humans are made so such that they cant be perfect. Because sometimes the humans can't express the exact words in flow. 
+    Is you know then in "DBMS entity sets are also referred as entities". But eventually the listeners already know that what the particular guy is talking about. So it's just like that. As you have understood the real meaning of "program" and "process" so now you can relate them correctly.
+
+    So i hope you've understood the insightful difference between "program" and "process".
+
+    Note: The above paragraphs and intuition inside it are created based on my personal knowledge and experiences. Feel free to raise your hand if you've any kind of doubt!
+
+    Suggestion: If you remember we talked about "random memory location / memory address", so if you are curious to know everything about it then you open the below link, i also provided the diagrammatic explanation for it:)
+    Link: https://github.com/hiren-j/MyDeepTechInsights/blob/Main-Memory-Insights/Why%20We%20Need%20Memory%20Addresses%20In%20Computers
+    Link: https://leetcode.com/discuss/study-guide/4267836/why-we-need-memory-addresses-the-real-need-of-variables-explained-easy-diagrammatic-explanation
+*/
