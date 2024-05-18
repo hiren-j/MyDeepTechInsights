@@ -10,7 +10,7 @@ No doubt we all are aware of this line: Time complexity is required to chose the
 
             Real world example: Suppose I tell you count the total number of even numbers lying within 1 to 50!
             Now suppose you have a limitation on counting such that you can only count 25 numbers at a time, so what you'll do, you will count the even numbers from the first 25 numbers and after completing the first half now you'll count the even numbers from the rest of the numbers from 26 to 50!
-            So here I could say that you've taken total of 2 operations to fully execute / solve the given problem. So, I could say that you've taken total of 2 cycles to solve the given problem. So, according to this analogy "you are acting like a CPU" and "the countings you did were the cycles you've performed". Hope you've got it!
+            So here I could say that you've taken total of 2 operations to fully execute / solve the given problem. So, I could say that you've taken total of 2 cycles to solve the given problem. So, according to this analogy "you are acting like a CPU" and "the two halves you did were the cycles you've performed". Hope you've got it!
             So, that's how the CPU cycles are the total number of operations the CPU has to perform inorder to execute / solve a single problem.
 
             Note: Each cycle corresponds to a clock tick of the CPU.
