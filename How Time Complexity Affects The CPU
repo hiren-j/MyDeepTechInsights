@@ -1,0 +1,60 @@
+/*
+Hey Everyone! Today we'll see the actual reason of why we look for efficiency of any algorithm. I'll cover how does the time complexity affects the machine hardware (CPU).
+
+Must read: I'll try my best to make everything easier for you to understand the things, remember I've created this topic to give a general idea, don't think of it like the time complexity is the only thing that affects the CPU! There are also other factors too.
+
+No doubt we all are aware of this line: Time complexity is required to chose the most efficient algorithm, it's required to compare the different-different algorithms so that we can chose the better one.
+
+    But everyone the above one is the secondary reason of it's existence. Now to understand the primary reason let's understand some important terms of the machine hardware (CPU):
+        1. Cycles: These are defined as the total number of operations the CPU has to perform inorder to solve a single problem or the total number of executions the CPU has to do inorder to solve a single problem.
+
+            Real world example: Suppose I tell you count the total number of even numbers lying within 1 to 50!
+            Now suppose you have a limitation on counting such that you can only count 25 numbers at a time, so what you'll do, you will count the even numbers from the first 25 numbers and after completing the first half now you'll count the even numbers from the rest of the numbers from 26 to 50!
+            So here I could say that you've taken total of 2 operations to fully execute / solve the given problem. So, I could say that you've taken total of 2 cycles to solve the given problem. So, according to this analogy "you are acting like a CPU" and "the countings you did were the cycles you've performed". Hope you've got it!
+            So, that's how the CPU cycles are the total number of operations the CPU has to perform inorder to execute / solve a single problem.
+
+            Note: Each cycle corresponds to a clock tick of the CPU.
+    
+        2. Cost: The cost for the CPU are the cycles it performs! Didn't get it? Let's understand it with a real world example:
+        Suppose you've 2 friends and you openely say to both of them is that "Whoever will write the 200 pages of my homework will be rewarded with 1000 rupees!". Now guess what! Both of them started writing the homework on a new notebook.
+        Now after 1 hour your first friend pops up in front of you and provide's you the homework. So, as said you rewarded him with 1000 rupees and he gone away.
+        Now the second friend comes up after 2 hours and provide's you the homework but guess what! You rejected it and said "I already accepted the homework of the first dude, I can't take yours now. I am sorry!". So, the second friend gets disappointed and gone away!
+
+            Did you notice something? 
+            1. The first friend took only 1 hour to complete the homework.
+            2. The second friend took 2 hours to complete the homework.
+
+            So, the common thing between them is the "Time" which they paid to complete the homework. So I could say the "time" was the "cost" that they paid, right! It's because there time is also precious for them.
+
+            So, now I could say:
+            1. The first friend paid only 1 hour of cost to complete the homework.
+            2. The second friend paid 2 hours of cost to complete the homework.
+
+            Now refer your both friends as two different CPU's and read this:
+            1. The CPU1 took only 1 cycle of cost to solve the problem.
+            2. The CPU2 took 2 cycles of cost to solve the problem.
+
+            So, I hope you've understood what are the costs in terms of machine hardware (CPU). It's the cycles right!
+
+    Now getting back to the main point. Suppose you're asked to solve a coding problem and you've created two solutions / algorithms to solve that problem. Now assume:
+        1. The time complexity of the first algorithm is quadratic in the worst case : O(N*N)
+        2. The time complexity of the second algorithm is linear in the worst case : O(N)
+        So, eventually the first algorithm lead to TLE (time-limit-exceed) and the second algorithm got submitted successfully. 
+
+    Suppose a hypothetical scenario in which a system is created such that it will accept the solutions which are consuming less than 5 cycles of the CPU.
+
+    So, according to this we could say that the first algorithm is for sure taking more than 5 cycles (5, 6, 7, 8, etc) to get fully executed and on the other hand the second algorithm is for sure taking less than 5 cycles (4, 3, 2, 1) and as a result we can see that the second algorithm is really efficient it's because the CPU has to perform less number of cycles to solve the given problem using the second algorithm. 
+    So, the cost paid by the CPU is really less and in the real world we always want the CPU to perform as possible as less number of cycles to solve any problem it's becaue if the number of cycles are less then it will absolutely take less time to solve the problem and we always want the machine hardware (CPU) to solve our problems quickly, right! So, this is the reason why we look for the most efficient algorithms of any coding problem. Now you could imagine is that how time complexity affects the machine hardware (CPU).
+
+        When we talk about "1GHZ CPU" or "2GHZ CPU" of any computer then we're actually referring to the clock cycles (CPU cycles) the CPU can perform every second.
+        Example: "1GHZ clock speed CPU" means that it can perform 1 giga (1 billion) of cycles per second.
+                 "2GHZ clock speed CPU" means that it can perform 2 giga (2 billion) of cycles per second.
+
+        Note: A higher clock speed means the CPU can execute more instructions per second.
+
+So, I hope you've understood the actual reason of why we look for efficiency of any algorithm.
+
+Must read: I've seen a lot of people are in confusion with the terms "CPU" and "Processor". They think these are the two different hardwares but actully they refer to only a single hardware. They are just synonyms which are used interchangeably.
+
+Note: The above paragraphs and intuition inside it are created based on my personal knowledge and experiences. Feel free to comment if you've any kind of doubt!
+*/
